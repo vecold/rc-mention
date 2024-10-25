@@ -1,0 +1,1 @@
+export const defaultPlaceholder = 'Alt+Enter换行'

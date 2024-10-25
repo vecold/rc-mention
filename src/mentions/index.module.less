@@ -1,0 +1,59 @@
+.at-mentions__editor {
+  width: 312px;
+  min-height: 24px;
+  background: #fff;
+  border: 1px solid #e5e5e5;
+  margin: auto;
+  color: black;
+  padding: 4px 8px;
+  &:focus-visible {
+    outline: none;
+  }
+}
+.placeholder {
+  position: absolute;
+  color: #a4a9b2;
+  top: 4px;
+  left: 8px;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.dropDownMenu {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  max-height: 256px;
+  overflow-y: auto;
+  .item {
+    padding: 4px 8px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    background: #fff;
+    transition: background-color 0.3s;
+    .icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      background: #0078e0;
+      margin-right: 8px;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 14px;
+    }
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  .focusItem {
+    color: #1677ff;
+    background-color: #e6f4ff;
+  }
+}
